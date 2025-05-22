@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Space - Профессиональный WordPress сайт</title>
+    <meta name="description" content="Промо-страница WordPress проекта с блогом и услугами digital-продвижения">
+    <meta name="keywords" content="WordPress, блог, SEO, digital маркетинг">
+    
+    <!-- Open Graph / Социальные метатеги -->
+    <meta property="og:title" content="Digital Space - Профессиональный WordPress сайт">
+    <meta property="og:description" content="Промо-страница проекта с переходом на WordPress-сайт">
+    <meta property="og:image" content="https://ваш-github-username.github.io/images/preview.jpg">
+    <meta property="og:url" content="https://ваш-github-username.github.io">
+    
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+       (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+       m[i].l=1*new Date();
+       for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+       k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+       (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+       ym(102059410, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+       });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/102059410" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXX');
+    </script>
+
+    <style>
+        :root {
+            --primary-color: #6C63FF;
+            --secondary-color: #4DCCC6;
+            --dark-color: #2D3748;
+            --light-color: #F7FAFC;
+            --accent-color: #FF6584;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            margin: 0;
+            padding: 0;
+            color: var(--dark-color);
+            background-color: var(--light-color);
+        }
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 4rem 0 6rem;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        header p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+        nav {
+            background: white;
+            padding: 1.5rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+        }
+        nav a {
+            color: var(--dark-color);
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 8px 15px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+        nav a:hover {
+            color: white;
+            background: var(--primary-color);
+        }
+        .container {
+            width: 85%;
+            max-width: 1200px;
+            margin: -50px auto 30px;
+            padding: 40px;
+            background: white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            border-radius: 10px;
+            position: relative;
+            z-index: 1;
+        }
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            background: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            margin: 20px 0;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            box-shadow: 0 4px 15px rgba(108, 99, 255, 0.3);
+        }
+        .btn:hover {
+            background: var(--secondary-color);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(108, 99, 255, 0.4);
+        }
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+            box-shadow: none;
+        }
+        .btn-outline:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 50px 0;
+            gap: 25px;
+        }
+        .feature-card {
+            flex: 0 0 30%;
+            padding: 30px;
+            margin-bottom: 20px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-top: 4px solid var(--primary-color);
+        }
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        .feature-card h3 {
+            color: var(--primary-color);
+            font-size: 1.4rem;
+        }
+        .blog-preview {
+            margin: 60px 0;
+            background: #F8F9FF;
+            padding: 40px;
+            border-radius: 12px;
+        }
+        .blog-preview h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: var(--primary-color);
+        }
+        .blog-preview ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .blog-preview li {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        .blog-preview li:last-child {
+            border-bottom: none;
+        }
+        .blog-preview a {
+            color: var(--dark-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            display: block;
+            padding: 10px;
+            border-radius: 6px;
+        }
+        .blog-preview a:hover {
+            color: var(--primary-color);
+            background: rgba(108, 99, 255, 0.05);
+        }
+        .subscribe {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            padding: 50px 30px;
+            border-radius: 12px;
+            text-align: center;
+            color: white;
+            margin: 60px 0;
+        }
+        .subscribe h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+        .subscribe p {
+            opacity: 0.9;
+            margin-bottom: 25px;
+        }
+        .subscribe input[type="email"] {
+            padding: 15px;
+            width: 350px;
+            max-width: 100%;
+            border: none;
+            border-radius: 30px;
+            font-size: 1rem;
+            margin-right: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .subscribe button {
+            padding: 15px 30px;
+        }
+        #contact {
+            text-align: center;
+            padding: 40px 0;
+        }
+        #contact h2 {
+            color: var(--primary-color);
+            margin-bottom: 30px;
+        }
+        .social {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .social a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            font-size: 1.3rem;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        .social a:hover {
+            background: var(--accent-color);
+            transform: translateY(-3px);
+        }
+        footer {
+            text-align: center;
+            padding: 2.5rem;
+            background: var(--dark-color);
+            color: white;
+            margin-top: 60px;
+        }
+        footer a {
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
+        @media (max-width: 768px) {
+            .feature-card {
+                flex: 0 0 100%;
+            }
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+            header {
+                padding: 3rem 0 5rem;
+                clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+            }
+            .container {
+                width: 95%;
+                padding: 25px;
+            }
+            .subscribe input[type="email"] {
+                margin-right: 0;
+                margin-bottom: 15px;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Digital Space</h1>
+        <p>Профессиональные решения для вашего онлайн-присутствия на платформе WordPress</p>
+    </header>
+    
+    <nav>
+        <a href="#main">Главная</a>
+        <a href="#features">Услуги</a>
+        <a href="#blog">Блог</a>
+        <a href="#contact">Контакты</a>
+        <a href="https://ucklaba6.wordpress.com" target="_blank" class="btn-outline">Перейти на сайт</a>
+    </nav>
+    
+    <div class="container" id="main">
+        <h2 style="text-align: center; color: var(--primary-color);">О нашем проекте</h2>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto 30px;">Это промо-страница нашего основного сайта, созданного на WordPress. Мы предлагаем комплексные решения для создания, оптимизации и продвижения вашего онлайн-присутствия.</p>
+        
+        <div style="text-align: center;">
+            <a href="https://ucklaba6.wordpress.com" class="btn">Перейти на основной сайт</a>
+        </div>
+        
+        <div class="features" id="features">
+            <div class="feature-card">
+                <h3>Веб-разработка</h3>
+                <p>Создание современных адаптивных сайтов на WordPress с уникальным дизайном и полным функционалом</p>
+            </div>
+            <div class="feature-card">
+                <h3>SEO оптимизация</h3>
+                <p>Комплексное продвижение сайтов в поисковых системах для привлечения целевой аудитории</p>
+            </div>
+            <div class="feature-card">
+                <h3>Контент-маркетинг</h3>
+                <p>Создание и продвижение полезного контента для увеличения вовлеченности и конверсии</p>
+            </div>
+        </div>
+        
+        <div class="blog-preview" id="blog">
+            <h2>Последние публикации</h2>
+            <ul>
+                <li><a href="https://ucklaba6.wordpress.com" target="_blank">Тренды веб-дизайна 2024: что будет популярно</a></li>
+                <li><a href="https://ucklaba6.wordpress.com" target="_blank">Как увеличить конверсию сайта: практические советы</a></li>
+                <li><a href="https://ucklaba6.wordpress.com" target="_blank">WordPress vs другие CMS: что выбрать для бизнеса</a></li>
+                <li><a href="https://ucklaba6.wordpress.com" target="_blank">Мобильная оптимизация: почему это важно и как сделать правильно</a></li>
+            </ul>
+            <div style="text-align: center;">
+                <a href="https://ucklaba6.wordpress.com" class="btn" target="_blank">Читать все статьи</a>
+            </div>
+        </div>
+        
+        <div class="subscribe">
+            <h3>Подпишитесь на рассылку</h3>
+            <p>Получайте полезные материалы и новости из мира digital прямо на почту</p>
+            <form action="https://ваш-сервис.подписки" method="post">
+                <input type="email" name="email" placeholder="Ваш email" required>
+                <button type="submit" class="btn">Подписаться</button>
+            </form>
+        </div>
+        
+        <div id="contact">
+            <h2>Свяжитесь с нами</h2>
+            <p>Email: <a href="mailto:Ivan_noskoff@gmail.com" style="color: var(--primary-color);">ivan_noskoF@gmail.com</a></p>
+            <p>Телефон: +8 (800) 555-35-35</p>
+            
+            <div class="social">
+                <a href="https://vk.com/ivannoskow" target="_blank">VK</a>
+                <a href="#" target="_blank">TG</a>
+                <a href="#" target="_blank">WA</a>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        &copy; 2024 Digital Space. Основной сайт: <a href="https://ucklaba6.wordpress.com">WordPress-версия</a>
+    </footer>
+</body>
+</html>
